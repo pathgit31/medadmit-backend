@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    { "src": "/api/essay-feedback", "dest": "/api/essay-feedback" },
+    { "src": "/api/school-matching", "dest": "/api/school-matching" },
+    { "src": "/api/generate-timeline", "dest": "/api/generate-timeline" },
+    { "src": "/api/narrative-builder", "dest": "/api/narrative-builder" },
+    { "src": "/api/application-review", "dest": "/api/application-review" },
+    { "src": "/api/interview-prep", "dest": "/api/interview-prep" }
+  ]
+}
